@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Easy-Lan-Screen-Share/static/css/main.bdac106c.css",
+    "main.js": "/Easy-Lan-Screen-Share/static/js/main.4d1956ef.js",
+    "index.html": "/Easy-Lan-Screen-Share/index.html",
+    "main.bdac106c.css.map": "/Easy-Lan-Screen-Share/static/css/main.bdac106c.css.map",
+    "main.4d1956ef.js.map": "/Easy-Lan-Screen-Share/static/js/main.4d1956ef.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bdac106c.css",
+    "static/js/main.4d1956ef.js"
+  ]
+}
