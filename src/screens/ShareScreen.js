@@ -47,17 +47,12 @@ function ShareScreen() {
           const compressedSdp = pako.deflate(offerSdp);
           const encodedOffer = uint8ArrayToBase64(compressedSdp);
 
-          const currentUrl = new URL(window.location.href);
-          const pathSegments = currentUrl.pathname.split("/").filter((p) => p);
-          if (pathSegments[pathSegments.length - 1] === "share") {
-            pathSegments[pathSegments.length - 1] = "view";
-          } else {
-            pathSegments.push("view");
-          }
-          currentUrl.pathname = "/" + pathSegments.join("/");
-          currentUrl.hash = encodedOffer;
+          // --- 変更点: HashRouter形式のURLを生成 ---
+          const baseUrl = window.location.href.split("#")[0];
+          const url = `${baseUrl}#/view#${encodedOffer}`;
+          // --- 変更点ここまで ---
 
-          setOfferUrl(currentUrl.href);
+          setOfferUrl(url);
           setStatus("QRコードを視聴者にスキャンさせてください");
         }
       };
