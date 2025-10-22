@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Easy-Lan-Screen-Share/static/css/main.bdac106c.css",
-    "main.js": "/Easy-Lan-Screen-Share/static/js/main.e1ce4fd2.js",
+    "main.js": "/Easy-Lan-Screen-Share/static/js/main.c08057b2.js",
     "index.html": "/Easy-Lan-Screen-Share/index.html",
     "main.bdac106c.css.map": "/Easy-Lan-Screen-Share/static/css/main.bdac106c.css.map",
-    "main.e1ce4fd2.js.map": "/Easy-Lan-Screen-Share/static/js/main.e1ce4fd2.js.map"
+    "main.c08057b2.js.map": "/Easy-Lan-Screen-Share/static/js/main.c08057b2.js.map"
   },
   "entrypoints": [
     "static/css/main.bdac106c.css",
-    "static/js/main.e1ce4fd2.js"
+    "static/js/main.c08057b2.js"
   ]
 }
