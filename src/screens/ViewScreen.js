@@ -73,10 +73,18 @@ function ViewScreen() {
   }, []);
 
   useEffect(() => {
-    const hash = window.location.hash.substring(1);
-    if (hash) {
-      handleOffer(hash);
+    // --- 変更点: URLハッシュからクエリパラメータを解析 ---
+    const hash = window.location.hash; // 例: #/view?offer=DATA...
+    const searchPart = hash.split('?')[1];
+
+    if (searchPart) {
+      const params = new URLSearchParams(searchPart);
+      const encodedOffer = params.get('offer');
+      if (encodedOffer) {
+        handleOffer(encodedOffer);
+      }
     }
+    // --- 変更点ここまで ---
   }, [handleOffer]);
 
   useEffect(() => {

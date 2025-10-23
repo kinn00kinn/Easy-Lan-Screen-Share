@@ -48,8 +48,8 @@ function ShareScreen() {
           const encodedOffer = uint8ArrayToBase64(compressedSdp);
 
           // --- 変更点: HashRouter形式のURLを生成 ---
-          const baseUrl = window.location.href.split("#")[0];
-          const url = `${baseUrl}#/view#${encodedOffer}`;
+          const baseUrl = window.location.href.split('#')[0];
+          const url = `${baseUrl}#/view?offer=${encodedOffer}`;
           // --- 変更点ここまで ---
 
           setOfferUrl(url);
